@@ -24,5 +24,5 @@ I can discuss my intrests about tech with others
 
 ## links 
 *Here* is the deployed heroku site: https://immense-reaches-92714.herokuapp.com/<p>
-*Here* is the repository: <p>
+*Here* is the repository: https://github.com/Justin7933/techblog14<p>
 
