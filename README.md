@@ -23,6 +23,6 @@ This techblog is to allow you to share your thoughts about tech to others and al
 I can discuss my intrests about tech with others
 
 ## links 
-*Here* is the deployed heroku site: <p>
+*Here* is the deployed heroku site: https://immense-reaches-92714.herokuapp.com/<p>
 *Here* is the repository: <p>
-*Here* is the slideshow: <p>
+
