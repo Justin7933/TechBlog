@@ -1,0 +1,25 @@
+<section>
+    <a href="/dashboard" class="btn btn-success m-3"><strong>Return to Dashboard</strong> </a>
+    <div class="py-5 text-center col-12">
+    <h2 class="text-center">
+        Edit Post
+    </h2>
+    <p class="text-center">Content:</p>
+    <form class="edit-post-form">
+        <label class="form-label text-center" for="content"></label>
+        <input name="content" type="text" value="{{post.content}}" class="form-input text-center" />
+        <br>
+        <button type="submit" class="btn-warning mt-2">Update Post</button>
+        <button type="button" class="delete-post-btn btn-danger mt-2">Delete post</button>
+    </form>
+    </div>>
+</section>
+
+<form class="comment-form">
+</form>
+
+{{> comments post.comments}}
+
+
+<script src="/js/edit-post.js"></script>
+<script src="/js/delete-post.js"></script>

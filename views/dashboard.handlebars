@@ -1,0 +1,46 @@
+<section>
+    <div class="container bg-dark">
+        {{!-- header above the form --}}
+        <div class="py-5 text-center col-12">
+            <h2 class="center-text text-primary">Create Your Own Post</h2>
+            <p class="lead text-muted">Lets Talk Tech!</p>
+        </div>
+        <hr>
+        <div>
+            <div class="py-5 text-center col-12">
+                <h4 class="text-center text-muted">Create Thread</h4>
+                <form class="create-form" action="/api/posts" method="POST">
+                    <div style="margin-bottom: 10px;">
+
+                        <input class="col-6 text-center" type="text" id="title" name="post-title" placeholder="Title...">
+                    </div>
+                    <div>
+
+                        <textarea class="col-6 text-center" id="post-text" name="post-text" placeholder="Post..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Create</button>
+            </div>
+        </div>
+</section>
+        <hr>
+
+        {{#if posts.length}}
+        <section>
+            <div class="container bg-dark">
+            <h2 class="text-center pt-5 pb-3 text-primary">Your Posts</h2>
+            <ol>
+                {{#each posts as |post|}}
+                {{> post-info post}}
+                <a class="link" href="dashboard/edit/{{id}}">
+                    <button type="button" id="editBtn" class="btn btn-sm mb-3 text-primary">Edit</button>
+                </a>
+                {{/each}}
+            </ol>
+            </div>
+        </section>
+        {{/if}}
+
+        {{!-- <button type="submit" class="btn"><a class="link" href="/dashboard/new"> New Post</a></button> --}}
+
+        <!--Script to add a post-->
+        <script src="/js/add-post.js"></script>

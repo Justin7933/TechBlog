@@ -1,0 +1,21 @@
+<div class="container mt-5">
+<div class="card box-shadow">
+    <div class='card-header' id='postHeader'>
+        <h4>"{{title}}"</h4>
+    </div>
+    <div class="card-body">
+        <p class="card-body">{{content}}</p>
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+                <a class="link" href="/post/{{id}}">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                </a>
+            </div>
+            <small class="text-muted"><i>Posted by {{user.username}} on {{format_date created_at}}</i>,
+                No.{{id}}</small>
+        </div>
+    </div>
+</div>
+</div>
+
+

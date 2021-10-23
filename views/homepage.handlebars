@@ -1,0 +1,19 @@
+<section class="jumbotron text-center">
+    <div class="container bg-dark">
+        <h1 class="jumbotron-heading text-primary">Wanna Talk About Tech Lets Make a Post!</h1>
+        <p class="lead text-muted">Just press the button below and get chatting!</p>
+        <p>
+            <a href="/dashboard" id='newThreadBtn' class="btn btn-success my-2 text-dark">Create Thread</a>
+        </p>
+    </div>
+</section>
+
+<article class="post bg-primary">
+
+    {{#each posts as |post| }}
+
+    {{> post-info post}}
+
+    {{/each}}
+
+</article>
